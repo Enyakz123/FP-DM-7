@@ -1,0 +1,11 @@
+joblib
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+wordcloud
+scikit-learn
+nltk
+Sastrawi
+google-play-scraper

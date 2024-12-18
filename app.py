@@ -26,7 +26,7 @@ nltk.download('stopwords')
 # Memuat model dan vektorisator
 model_nb = joblib.load('naive_bayes_model.pkl')  # Model Naive Bayes
 model_rf = joblib.load('random_forest_model.pkl')  # Model Random Forest
-model_lr = joblib.load('logistic_model.pkl')  # Model Logistic Regression
+model_lr = joblib.load('logistic_regression_model.pkl')  # Model Logistic Regression
 vectorizer = joblib.load('tfidf_vectorizer.pkl')  # Memuat vektorisator yang sesuai
 
 
