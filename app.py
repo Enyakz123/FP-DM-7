@@ -186,11 +186,11 @@ st.title('Sentiment Analysis & EDA')
 st.write("Masukkan ulasan untuk menganalisis sentimen atau unggah file CSV untuk melakukan EDA.")
 
 # Tab Navigasi
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["📊 EDA", "📈 Prediksi Sentimen", "Scapping", "Preprocessing Data", "Training"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["EDA", "Prediksi Sentimen", "Scapping", "Preprocessing Data", "Training"])
 
 # Tab 1: EDA
 with tab1:
-    st.header('📊 Eksplorasi Data Ulasan (EDA)')
+    st.header('Eksplorasi Data Ulasan (EDA)')
     uploaded_file = st.file_uploader("Unggah file CSV untuk EDA", type=["csv"])
 
     if uploaded_file is not None:
@@ -205,7 +205,7 @@ with tab1:
 
 # Tab 2: Prediksi Sentimen
 with tab2:
-    st.header('📈 Prediksi Sentimen')
+    st.header('Prediksi Sentimen')
     # Pilihan model di Streamlit
     model_choice = st.selectbox(
         'Pilih Model untuk Prediksi Sentimen:',
