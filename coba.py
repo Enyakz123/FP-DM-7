@@ -16,12 +16,14 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
-import nltk
 import io
+import nltk
 
-# Download data nltk
-nltk.download('punkt')
-nltk.download('stopwords')
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 
 # Memuat model dan vektorisator
 model = joblib.load('naive_bayes_model.pkl')  # Pastikan menggunakan model yang benar
