@@ -196,8 +196,7 @@ with tab1:
     if uploaded_file is not None:
         data = pd.read_csv(uploaded_file)
         if 'content' in data.columns and 'score' in data.columns:
-            # perform_eda(data[['content', 'score']])
-            perform_eda(data)
+            perform_eda(data[['content', 'score']])
         else:
             st.error("File CSV harus memiliki kolom 'content' dan 'score'.")
     else:
