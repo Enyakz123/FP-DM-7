@@ -311,7 +311,7 @@ with tab4:
     else:
         st.info("Silakan unggah file CSV dengan kolom 'content' dan 'score'.")
 
-    # st.header('📈 Hasil Preprocessing')
+    st.header('📈 Hasil Preprocessing')
 
     if 'preprocessed_data' in st.session_state:
         preprocessed_data = st.session_state['preprocessed_data']
@@ -324,8 +324,8 @@ with tab4:
             file_name='preprocessed_comments.csv',
             mime='text/csv',
         )
-    # else:
-    #     st.info("Silakan jalankan preprocessing di tab sebelumnya.")
+    else:
+        st.info("Silakan jalankan preprocessing di tab sebelumnya.")
 
 # Tab 5: Training Model
 with tab5:
