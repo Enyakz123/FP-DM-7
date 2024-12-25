@@ -21,6 +21,7 @@ import io
 
 # Download data nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 # Memuat model dan vektorisator
